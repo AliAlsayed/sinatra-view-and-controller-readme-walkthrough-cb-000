@@ -13,6 +13,8 @@ class App < Sinatra::Base
 
   get '/friends' do
     # Write your code here!
-    <h2><%= @reversed_string %></h2>
+    @friends = ['Emily Wilding Davison', 'Harriet Tubman', 'Joan of Arc',
+       'Malala Yousafzai', 'Sojourner Truth']
+    erb :friends
   end
 end
